@@ -1,0 +1,142 @@
+<!doctype html>
+<html class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="src/output.css" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <script>
+    function preLoad() {
+      a1 = new Image; a1.src = 'src/good_01.png';  
+      a2 = new Image; a2.src = 'src/poster_02.png';
+      a3 = new Image; a3.src = 'src/logo_02.png';
+      a4 = new Image; a4.src = 'src/web_03.png';
+    }
+    function im(image) {
+      document.getElementById(image[0]).src = eval(image + ".src")
+    }
+    </script>
+</head>
+<body onLoad="preLoad()">
+    <div class="navbar bg-base-100 justify-center p-7">
+        <a href=""><img class="w-40 animate-jelly" src="src/snw_01.png"></a>
+    </div>
+   
+      <div class="flex w-full flex-col p-10 mx-auto min-h-full place-items-center">
+          <h1 class="text-3xl lg:text-5xl font-black text-center animate-fade-in">Brand is a Friend.</h1>
+          <span class="text-lg animate-fade-in-down">Which one would you befriend?</span>
+          <form autocomplete="off">
+            <div class="grid grid-cols-4 p-5 gap-3 mx-auto place-items-center animate-fade-in-right">
+              <div class="tooltip" data-tip="Product Design">
+                <input onClick="im('a1');" type="radio" name="radio-3" class="radio radio-error" checked="checked" />
+              </div>
+              <div class="tooltip" data-tip="Poster Design">
+                <input onClick="im('a2');" type="radio" name="radio-3" class="radio radio-warning" />
+              </div>
+              <div class="tooltip" data-tip="Logo Design">
+                <input onClick="im('a3')" type="radio" name="radio-3" class="radio radio-success" />
+              </div>
+              <div class="tooltip" data-tip="Website Design">
+                <input onClick="im('a4')" type="radio" name="radio-3" class="radio radio-neutral" />
+              </div>
+          </form>
+          </div>
+          
+          <img class="w-150 animate-blurred-fade-in" id="a" alt="daisy" src="src/good_01.png"/>
+
+          <div class="border-0 border-t-4 border-dotted min-w-full mt-15 mx-auto"></div>
+
+          
+          <div class="grid grid-cols-2 p-10 gap-10 place-items-center">
+              <h1 class="text-center lg:text-start col-span-2 lg:col-span-1 text-3xl lg:text-5xl"><b>Snüwy</b> is ready to make:</h1>
+              <div class="col-span-2 snap-y snap-mandatory lg:col-span-1 carousel carousel-vertical rounded-box h-30 lg:h-96 min-w-full place-items-center">
+              <div class="carousel-slide carousel-item h-full place-items-center snap-center" data-carousel-item> 
+                <h1 class="text-6xl lg:text-8xl font-black">Posters</h1>
+                <div style="animation-iteration-count: infinite;" class="italic animate-vertical-bounce rotate-6 text-xs lg:text-lg">Scroll me!</div>
+              </div>
+              <div class="carousel-slide carousel-item h-full place-items-center snap-center">
+                <h1 class="text-6xl lg:text-8xl font-black">Logo</h1>
+              </div>
+              <div class="carousel-item h-full place-items-center snap-center">
+                <h1 class="text-6xl lg:text-8xl font-black">Feeds</h1>
+              </div>
+              <div class="carousel-item h-full place-items-center snap-center">
+                <h1 class="text-6xl lg:text-8xl font-black">Websites</h1>
+              </div>
+              <div class="carousel-item h-full place-items-center snap-center">
+                <h1 class="text-6xl lg:text-8xl font-black">Videos</h1>
+              </div>
+            </div>
+          </div>
+          
+          
+
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+  <div class="grid gap-4">
+      <div>
+          <img class="h-auto rounded-lg hover:scale-120 hover:shadow-xl duration-200" src="src/design_01.png" alt="">
+      </div>
+      <div>
+          <img class="h-auto max-w-full rounded-lg hover:scale-120 hover:shadow-xl duration-200" src="src/design_03.png" alt="">
+      </div>
+      <div>
+          <img class="h-auto max-w-full rounded-lg hover:scale-120 hover:shadow-xl duration-200" src="src/poster_01.png" alt="">
+      </div>
+  </div>
+  <div class="grid gap-4">
+      <div>
+          <img class="h-auto max-w-full rounded-lg hover:scale-120 hover:shadow-xl duration-200" src="src/design_02.png" alt="">
+      </div>
+      <div>
+          <img class="h-auto max-w-full rounded-lg hover:scale-120 hover:shadow-xl duration-200" src="src/design_05.png" alt="">
+      </div>
+      <div>
+          <img class="h-auto max-w-full rounded-lg hover:scale-120 hover:shadow-xl duration-200" src="src/Rose_01.png" alt="">
+      </div>
+  </div>
+  <div class="grid gap-4">
+      <div>
+          <img class="h-auto max-w-full rounded-lg hover:scale-120 hover:shadow-xl duration-200" src="src/bag_01.png" alt="">
+      </div>
+      <div>
+          <img class="h-auto max-w-full rounded-lg hover:scale-120 hover:shadow-xl duration-200" src="src/design_04.png" alt="">
+      </div>
+      <div>
+          <img class="h-auto max-w-full rounded-lg hover:scale-120 hover:shadow-xl duration-200" src="src/libre_01.png" alt="">
+      </div>
+  </div>
+  <div class="grid gap-4">
+      <div>
+          <img class="h-auto max-w-full rounded-lg hover:scale-120 hover:shadow-xl duration-200" src="src/design_06.png" alt="">
+      </div>
+      <div>
+          <img class="h-auto max-w-full rounded-lg hover:scale-120 hover:shadow-xl duration-200" src="src/web_03.png" alt="">
+      </div>
+      <div>
+          <img class="h-auto max-w-full rounded-lg hover:scale-120 hover:shadow-xl duration-200" src="src/lanyard_02.png" alt="">
+      </div>
+  </div>
+</div>
+
+
+
+<footer class="footer gap-5 md:flex md:justify-between flex-row place-items-center mx-auto p-10 min-w-full h-full grow">
+  <img class="w-25 lg:w-40" src="src/snw_01.png" alt="">
+  <div class="tooltip">
+    <div class="tooltip-content">
+      <div class="text-2xl">Let's work together!</div>
+    </div>
+    <a class="link text-xl font-bold" href="mailto:snuwydesign@proton.me"><img class="lg:w-40 w-25 hover:rotate-6 duration-300" src="src/contact_01.png" alt="" srcset=""></a>
+  </div>
+  <a href="https://notbyai.fyi/" target="_blank"> <img class="justify-self-end w-25 lg:w-40 hover:animate-tada" src="src/by_human.png" alt=""></a>
+</footer>
+
+<div class="footer flex flex-wrap justify-center">
+  <a class="link" href="https://anugerah.vercel.app" target="_blank">Created by Anugerah © 2025</a>
+</div>
+
+</body>
+</html>
